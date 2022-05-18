@@ -3,15 +3,14 @@
 x = int(program.args[1])
 result = 0
 temp = 0
-counter = 0
 
 @for_range(x)
-    temp = input_from(counter)
-    if counter != x:
+def _(i):
+    temp = input_from(i)
+    if i != x:
         print_str('%s + ', temp.reveal())
     else:
         print_str('%s = ', temp.reveal())
     result += temp
-    counter += 1
 
 print_str('%s\n', result)
