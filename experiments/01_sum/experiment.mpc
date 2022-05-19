@@ -6,11 +6,13 @@ temp = 0
 
 @for_range(x)
 def _(i):
-    temp = input_from(i)
+    temp.input_from(i)
+    ''' Nicht secret values revealen
     if i != x:
         print_str('%s + ', temp.reveal())
     else:
         print_str('%s = ', temp.reveal())
+    '''
     result += temp
 
 print_str('%s\n', result)
