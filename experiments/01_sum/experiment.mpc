@@ -3,12 +3,11 @@
 x = int(program.args[1])
 result = 0
 array = sint.Array(1)
-temp = 0
+temp = sint
 
 @for_range(x)
 def _(i):
-    array.input_from(i)
-    temp += array[0]
+    temp = sint.get_input_from(i)
     ''' Nicht secret values revealen
     if i != x:
         print_str('%s + ', temp.reveal())
