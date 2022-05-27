@@ -2,18 +2,20 @@
 
 x = int(program.args[1])
 result = 0
-array = sint.Array(1)
+inputs = sint.Array(x)
 #temp = sint
 
 @for_range(x)
 def _(i):
-    temp = sint.get_input_from(i)
+    inputs[i].input_from(i)
     ''' Nicht secret values revealen
     if i != x:
         print_str('%s + ', temp.reveal())
     else:
         print_str('%s = ', temp.reveal())
     '''
-    result += temp
+@for_range(x)
+def _(i):
+    result += inputs[i]
 
 print_str('%s\n', result)
