@@ -3,7 +3,7 @@
 x = int(program.args[1])
 inputs = sint.Array(x)
 #temp = sint(0)
-tt
+
 @for_range(x)
 def _(i):
     inputs[i] = sint.get_input_from(i)
