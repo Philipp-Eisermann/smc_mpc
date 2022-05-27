@@ -1,13 +1,13 @@
 """ Computes the sum of x numbers """
 
 x = int(program.args[1])
-result = 0
+result = sint(0)
 inputs = sint.Array(x)
-#temp = sint
+#temp = sint(0)
 
 @for_range(x)
 def _(i):
-    inputs[i].input_from(i)
+    inputs[i] = sint.get_input_from(i)
     ''' Nicht secret values revealen
     if i != x:
         print_str('%s + ', temp.reveal())
@@ -18,4 +18,4 @@ def _(i):
 def _(i):
     result += inputs[i]
 
-print_str('%s\n', result)
+print_str('%s\n', result.reveal())
