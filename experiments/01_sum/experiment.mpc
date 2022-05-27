@@ -3,7 +3,7 @@
 x = int(program.args[1])
 result = 0
 array = sint.Array(1)
-temp = sint
+#temp = sint
 
 @for_range(x)
 def _(i):
