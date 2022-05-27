@@ -1,7 +1,6 @@
 """ Computes the sum of x numbers """
 
 x = int(program.args[1])
-result = sint(0)
 inputs = sint.Array(x)
 #temp = sint(0)
 
@@ -14,8 +13,7 @@ def _(i):
     else:
         print_str('%s = ', temp.reveal())
     '''
-@for_range(x)
-def _(i):
-    result += inputs[i]
+
+result = sum(inputs)
 
 print_str('%s\n', result.reveal())
