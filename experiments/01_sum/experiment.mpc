@@ -4,9 +4,9 @@ x = int(program.args[1])
 inputs = sint.Array(x)
 #temp = sint(0)
 
-@for_range(x)
-def _(i):
-    inputs[i] = sint.get_input_from(i)
+for i in range(x):
+    inputs[i].input_from(i)
+
     ''' Nicht secret values revealen
     if i != x:
         print_str('%s + ', temp.reveal())
