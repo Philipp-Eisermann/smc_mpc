@@ -1,11 +1,13 @@
 """ Computes the sum of x numbers """
 
+program.bit_length = 64
+
 x = int(program.args[1])
 inputs = sint.Array(x)
 #temp = sint(0)
 
 for i in range(x):
-    inputs[i].input_from(i)
+    inputs[i].get_input_from(i)
 
     ''' Nicht secret values revealen
     if i != x:
