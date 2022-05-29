@@ -1,0 +1,30 @@
+'''
+- First program argument is the length of the arrays
+- Second program argument is the element to be found (sElement)
+- All elements are between 0 and 10
+- Input of Players is the array
+- Program outputs which of the 2 participants has more sElements
+'''
+
+length = int(program.args[1])
+sElement = int(program.args[2])
+
+array0 = sint.Array(length)
+array0.input_from(1)
+
+array1 = sint.Array(length)
+array1.input_from(0)
+
+counter0 = 0
+counter1 = 0
+
+for i in range(x):
+    counter0 += if_else(array0[i] == sint(sElement), 1, 0)
+    counter1 += if_else(array1[i] == sint(sElement), 1, 0)
+
+if (counter0 > counter1):
+    print_ln('Player 0 has more %s in his array', sElement)
+else if (counter0 < counter1):
+    print_ln('Player 1 has more %s in his array', sElement)
+else:
+    print_ln('Players have same number of %s in their arrays', sElement)
