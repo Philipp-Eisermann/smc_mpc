@@ -7,7 +7,7 @@
 '''
 
 length = int(program.args[1])
-sElement = int(program.args[2])
+sElement = 5
 
 array0 = sint.Array(length)
 array0.input_from(1)
@@ -18,7 +18,7 @@ array1.input_from(0)
 counter0 = 0
 counter1 = 0
 
-for i in range(x):
+for i in range(length - 1):
     counter0 += if_else(array0[i] == sint(sElement), 1, 0)
     counter1 += if_else(array1[i] == sint(sElement), 1, 0)
 
