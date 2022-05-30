@@ -24,7 +24,7 @@ for i in range(x):
 
 if (counter0 > counter1):
     print_ln('Player 0 has more %s in his array', sElement)
-else if (counter0 < counter1):
+elif (counter0 < counter1):
     print_ln('Player 1 has more %s in his array', sElement)
 else:
     print_ln('Players have same number of %s in their arrays', sElement)
