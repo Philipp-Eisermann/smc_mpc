@@ -18,4 +18,4 @@ for i in range(x):
 
 result = sum(inputs)
 
-print_str('%s\n', result.reveal())
+print_str('result is %s\n', result.reveal())
