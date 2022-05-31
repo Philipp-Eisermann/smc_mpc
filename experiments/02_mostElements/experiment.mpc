@@ -10,10 +10,10 @@ length = int(program.args[1])
 sElement = 5
 
 array0 = sint.Array(length)
-array0.input_from(1)
+array0.input_from(0)
 
 array1 = sint.Array(length)
-array1.input_from(0)
+array1.input_from(1)
 
 counter0 = 0
 counter1 = 0
